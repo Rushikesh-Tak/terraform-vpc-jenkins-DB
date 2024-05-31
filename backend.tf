@@ -4,6 +4,7 @@ terraform {
     bucket = "my-terraform-tfstate-file-bucket-1"   # Bucket name
     key    = "my/terraform.tfstate" # this creates ours directory and stores terraform.tfstate file in that directory
     region = "ap-south-1"  # region in which your data is stored
+    dynamodb_table = var.dynamodb_name
   }
 }
 
